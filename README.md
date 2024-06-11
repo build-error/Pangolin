@@ -93,6 +93,12 @@ cmake -B build -G Ninja -D BUILD_TESTS=ON
 cmake --build build
 cd build
 ctest
+
+# This one works in my pc
+mkdir build && cd build
+cmake ..
+cmake --build .
+sudo make install
 ```
 
 ![Master Build](https://github.com/stevenlovegrove/pangolin/actions/workflows/build.yml/badge.svg?branch=master) p.s. The *master* branch is a development branch. Choose a [stable tag](https://github.com/stevenlovegrove/Pangolin/tags) if you prefer.
